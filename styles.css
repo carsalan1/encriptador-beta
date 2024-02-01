@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagenes/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: #aed6f1; /* Azul pastel claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    width: 800px; /* Aumenté el ancho del contenedor */
+    flex-direction: column; /* Cambiado la dirección del flex para apilar los elementos verticalmente */
+    align-items: center; /* Alineado al centro horizontalmente */
+}
+
+.input-section,
+.output-section {
+    flex: 1;
+    color: #2c3e50; /* Azul oscuro para el texto */
+}
+
+.input-section {
+    margin-bottom: 20px; /* Aumenté el margen inferior del input-section */
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #3498db; /* Azul suave para títulos */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e; /* Azul más oscuro para etiquetas */
+}
+
+textarea {
+    width: 100%; /* Ajustado para ocupar el 100% del contenedor */
+    max-width: 100%; /* Ajustado para ocupar el 100% del contenedor */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7; /* Azul más claro para borde */
+    border-radius: 4px;
+    resize: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #3498db; /* Azul suave para botones */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+}
+
+.output-section {
+    text-align: center;
+}
+
+.copy-button {
+    background-color: #e74c3c; /* Rojo pastel */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.copy-button:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+}
