@@ -7,21 +7,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 100vh;
-    
 }
 
 .container {
-    background-color: #aed6f1; /* Azul pastel claro */
+    background-color: #d2b48c; /* Color paja */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     display: flex;
-    width: 800px; /* Aumenté el ancho del contenedor */
-    flex-direction: column; /* Cambiado la dirección del flex para apilar los elementos verticalmente */
-    align-items: center; /* Alineado al centro horizontalmente */
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-section,
@@ -31,28 +31,28 @@ body {
 }
 
 .input-section {
-    margin-bottom: 20px; /* Aumenté el margen inferior del input-section */
+    margin-bottom: 20px;
 }
 
 h1,
 h2 {
     text-align: center;
-    color: #3498db; /* Azul suave para títulos */
+    color: #8b4513; /* Marrón oscuro para títulos */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #34495e; /* Azul más oscuro para etiquetas */
+    color: #654321; /* Marrón tierra para etiquetas */
 }
 
 textarea {
-    width: 100%; /* Ajustado para ocupar el 100% del contenedor */
-    max-width: 100%; /* Ajustado para ocupar el 100% del contenedor */
+    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #bdc3c7; /* Azul más claro para borde */
+    border: 1px solid #deb887; /* Marrón claro para borde */
     border-radius: 4px;
     resize: none;
 }
@@ -62,7 +62,7 @@ textarea {
 }
 
 button {
-    background-color: #3498db; /* Azul suave para botones */
+    background-color: #a0522d; /* Marrón sienna para botones */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+    background-color: #8b4513; /* Marrón más oscuro al pasar el ratón */
 }
 
 .output-section {
@@ -80,7 +80,7 @@ button:hover {
 }
 
 .copy-button {
-    background-color: #e74c3c; /* Rojo pastel */
+    background-color: #cd853f; /* Marrón claro */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -89,5 +89,27 @@ button:hover {
 }
 
 .copy-button:hover {
-    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+    background-color: #8b4513; /* Marrón más oscuro al pasar el ratón */
+}
+
+footer {
+    background-color: #f5f5dc; /* Beige claro */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+footer span {
+    color: #8b4513; /* Marrón oscuro para el texto del footer */
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: middle;
 }

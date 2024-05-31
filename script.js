@@ -9,7 +9,7 @@ function validateInput() {
     if (containsUpperCase || containsSpecialChars) {
         // Muestra mensaje de error en negrita, cursiva y tamaño 20px
         errorMessageElement.innerHTML = '<b><i style="font-size:20px; color: red;">Error:</i></b> ';
-        
+
         if (containsUpperCase) {
             errorMessageElement.innerHTML += 'Solo se permiten letras minúsculas.';
         }
@@ -63,11 +63,11 @@ function decryptText() {
     }
 
     const result = inputText
-        .replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
+        .replace(/\bufat\b/g, 'u')
+        .replace(/\bober\b/g, 'o')
+        .replace(/\bai\b/g, 'a')
+        .replace(/\bimes\b/g, 'i')
+        .replace(/\benter\b/g, 'e');
 
     document.getElementById('outputText').value = result;
 }
