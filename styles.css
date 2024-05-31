@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(imagenes/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container {
+    background-color: #d2b48c; /* Color paja */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section,
+.output-section {
+    flex: 1;
+    color: #2c3e50; /* Azul oscuro para el texto */
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #8b4513; /* Marrón oscuro para títulos */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #654321; /* Marrón tierra para etiquetas */
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #deb887; /* Marrón claro para borde */
+    border-radius: 4px;
+    resize: none;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    background-color: #a0522d; /* Marrón sienna para botones */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #8b4513; /* Marrón más oscuro al pasar el ratón */
+}
+
+.output-section {
+    text-align: center;
+}
+
+.copy-button {
+    background-color: #cd853f; /* Marrón claro */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.copy-button:hover {
+    background-color: #8b4513; /* Marrón más oscuro al pasar el ratón */
+}
+
+footer {
+    background-color: #f5f5dc; /* Beige claro */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+footer span {
+    color: #8b4513; /* Marrón oscuro para el texto del footer */
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: middle;
+}

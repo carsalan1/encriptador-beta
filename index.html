@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador de Texto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: url(imagenes/background.jpg);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        textarea, button {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .output-section {
+            text-align: center;
+        }
+        .copy-button {
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer img {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 id="title">Encriptador / Desencriptador de Texto</h1>
+
+    <div class="input-section">
+        <label for="inputText">Ingrese el texto aquí:</label>
+        <textarea id="inputText" oninput="validateInput()"></textarea>
+
+        <div class="buttons">
+            <button onclick="encryptText()">Encriptar</button>
+            <button onclick="decryptText()">Desencriptar</button>
+        </div>
+    </div>
+
+    <div id="errorMessage" class="error-message"></div>
+
+    <div class="output-section">
+        <h2>Resultado:</h2>
+        <textarea id="outputText" readonly></textarea>
+        <button class="copy-button" onclick="copyToClipboard()">Copiar al Portapapeles</button>
+    </div>
+</div>
+
+<footer>
+        <span>© 2024 Juan Salgado</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
