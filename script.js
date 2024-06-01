@@ -63,11 +63,11 @@ function decryptText() {
     }
 
     const result = inputText
-        .replace(/\bufat\b/g, 'u')
-        .replace(/\bober\b/g, 'o')
-        .replace(/\bai\b/g, 'a')
-        .replace(/\bimes\b/g, 'i')
-        .replace(/\benter\b/g, 'e');
+        .replace(/ufat/g, 'u')
+        .replace(/ober/g, 'o')
+        .replace(/ai/g, 'a')
+        .replace(/imes/g, 'i')
+        .replace(/enter/g, 'e');
 
     document.getElementById('outputText').value = result;
 }
