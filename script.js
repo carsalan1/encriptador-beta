@@ -91,3 +91,4 @@ function copyToClipboard() {
     // Deselecciona el texto después de copiarlo
     document.getSelection().removeAllRanges();
 }
+
